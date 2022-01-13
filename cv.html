@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum Vitae</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      @font-face {
+        font-family: "ibm_plex_sansregular";
+        src: url("webfontkit-plexsansregular/ibmplexsans-regular-webfont.woff2")
+            format("woff2"),
+          url("webfontkit-plexsansregular/ibmplexsans-regular-webfont.woff")
+            format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "ibm_plex_sansbold";
+        src: url("webfontkit-flexsansbold/ibmplexsans-bold-webfont.woff2")
+            format("woff2"),
+          url("webfontkit-flexsansbold/ibmplexsans-bold-webfont.woff")
+            format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "ibm_plex_seriftext";
+        src: url("webfontkit-plexseriftext/ibmplexserif-text-webfont.woff2")
+            format("woff2"),
+          url("webfontkit-plexseriftext/ibmplexserif-text-webfont.woff")
+            format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "ibm_plex_seriflight";
+        src: url("webfontkit-plexseriflight/ibmplexserif-light-webfont.woff2")
+            format("woff2"),
+          url("webfontkit-plexseriflight/ibmplexserif-light-webfont.woff")
+            format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "ibm_plex_serifbold";
+        src: url("webfontkit-plexserifbold/ibmplexserif-bold-webfont.woff2")
+            format("woff2"),
+          url("webfontkit-plexserifbold/ibmplexserif-bold-webfont.woff")
+            format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      ::-webkit-scrollbar {
+        width: 1.5em;
+      }
+      ::-webkit-scrollbar-track {
+        background: #010101;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: -webkit-linear-gradient(
+          90deg,
+          #010101,
+          #813ffc,
+          #572ee5,
+          #010101
+        );
+      }
+      * {
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+      }
+      nav {
+        font-family: "ibm_plex_sansregular";
+        font-size: 24px;
+      }
+      body {
+        position: relative;
+        background: rgba(0, 0, 0, 1);
+        background: -moz-linear-gradient(
+          top,
+          rgba(0, 0, 0, 1) 4%,
+          rgba(16, 22, 102, 1) 47%,
+          rgba(35, 49, 227, 1) 100%
+        );
+        background: -webkit-gradient(
+          left top,
+          left bottom,
+          color-stop(4%, rgba(0, 0, 0, 1)),
+          color-stop(47%, rgba(16, 22, 102, 1)),
+          color-stop(100%, rgba(35, 49, 227, 1))
+        );
+        background: -webkit-linear-gradient(
+          top,
+          rgba(0, 0, 0, 1) 4%,
+          rgba(16, 22, 102, 1) 47%,
+          rgba(35, 49, 227, 1) 100%
+        );
+        background: -o-linear-gradient(
+          top,
+          rgba(0, 0, 0, 1) 4%,
+          rgba(16, 22, 102, 1) 47%,
+          rgba(35, 49, 227, 1) 100%
+        );
+        background: -ms-linear-gradient(
+          top,
+          rgba(0, 0, 0, 1) 4%,
+          rgba(16, 22, 102, 1) 47%,
+          rgba(35, 49, 227, 1) 100%
+        );
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 1) 4%,
+          rgba(16, 22, 102, 1) 47%,
+          rgba(35, 49, 227, 1) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#2331e3', GradientType=0 );
+        color: #c6c6c6;
+      }
+      .font-gradient {
+        background: -webkit-linear-gradient(180deg, #80ffec, #572ee5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .container-fluid {
+        padding: 0 !important;
+      }
+      header {
+        font-family: "ibm_plex_serifbold";
+        color: #f4f4f4;
+        position: relative;
+      }
+      #first-box {
+        height: 500px;
+        background-color: #f4f4f4;
+        background-image: url(https://www.ibm.com/images/portal/A001356T22555K86/essential/megamenu-pictogram-the-essentials.png);
+        background-size: 30%;
+        background-repeat: repeat;
+        background-position-x: 20px;
+        background-position-y: -14px;
+        position: relative;
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 40%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+      #german {
+        font-size: 3.6em;
+        font-weight: bold;
+        writing-mode: vertical-lr;
+        text-orientation: sideways;
+        letter-spacing: 0.51em;
+        transform: rotate(180deg);
+        margin-top: -6px !important;
+        margin-left: 0px !important;
+        position: absolute;
+        top: -22px;
+        left: 30px;
+      }
+      #romano {
+        font-size: 3.52em;
+        writing-mode: vertical-rl;
+        text-orientation: sideways-right;
+        letter-spacing: 0.529em;
+        margin: 0em 0em 0em 2.5em !important;
+        padding-left: 10px !important;
+        padding-bottom: 40px !important;
+        background-color: #010101;
+        color: #f4f4f4;
+      }
+      #alvarez {
+        font-size: 3.35em;
+        writing-mode: vertical-lr;
+        text-orientation: sideways;
+        letter-spacing: 0.5em;
+        margin-right: 40px !important;
+      }
+      .mean-stack {
+        background-color: transparent;
+        max-height: 91%;
+        position: absolute;
+        bottom: 48px;
+        right: 3%;
+        font-family: "ibm_plex_serifbold";
+        font-size: 54px;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        z-index: 1;
+        letter-spacing: 2px;
+      }
+      .sobre-mi {
+        font-size: 24px;
+      }
+      h1 {
+        color: #010101;
+        font-size: 50px;
+        font-family: "ibm_plex_sansbold";
+      }
+      h2 {
+        font-family: "ibm_plex_serifbold";
+      }
+      h3 {
+        font-family: "ibm_plex_serifbold";
+      }
+      h5 {
+        font-family: "ibm_plex_seriftext";
+        font-size: 22px;
+      }
+      h6 {
+        font-family: "ibm_plex_sansbold";
+        font-size: 76px;
+      }
+      p {
+        font-family: "ibm_plex_seriflight";
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .gold {
+        color: transparent;
+        font-size: 50px;
+        letter-spacing: 5px;
+        font-weight: bold;
+        background-image: linear-gradient(
+          to top,
+          #462523 0,
+          #cb9b51 22%,
+          #f6e27a 45%,
+          #f6f2c0 50%,
+          #f6e27a 55%,
+          #cb9b51 78%,
+          #462523 100%
+        );
+        -webkit-background-clip: text;
+      }
+      .vertical-text {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+      }
+
+      #position-frontend {
+        position: relative;
+        top: 0px;
+        left: -80px;
+        font-size: 52px;
+        width: 105%;
+      }
+      #position-angular {
+        border: #010101 1px solid;
+        background-color: #010101;
+        width: 87%;
+        position: absolute;
+        bottom: -40px;
+        left: -15px;
+        transform: skewX(-15deg);
+        letter-spacing: 1.6em;
+        font-family: "ibm_plex_serifbold";
+        padding-left: 80px !important;
+      }
+      main,
+      .data {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+        background-color: #f4f4f4;
+        /* color: #262626; */
+        color: #525252;
+      }
+      .organic {
+        position: absolute;
+        left: 0px;
+        z-index: 0;
+      }
+      .organic2 {
+        position: absolute;
+        bottom: 50px;
+        z-index: 0;
+      }
+      .bg {
+        position: relative;
+        width: 100%;
+        height: 1000px;
+        z-index: 0;
+      }
+      .tilt-image {
+        position: relative;
+        top: 50px;
+        left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px !important;
+      }
+      .card-glassmorphism {
+        width: 84%;
+        box-shadow: 0 0 1rem 0 rgb(0 0 0 / 20%);
+        border-radius: 50px;
+        backdrop-filter: blur(10px);
+        padding: 50px !important;
+        text-align: center;
+        font-weight: 900;
+        font-size: 24px;
+        color: #010101;
+        text-align: left;
+        box-shadow: 0.1px 2.7px 1.6px rgba(255, 255, 255, 0.029),
+          0.2px 6px 3.6px rgba(255, 255, 255, 0.029),
+          0.4px 10.5px 6.3px rgba(255, 255, 255, 0.029),
+          0.6px 16.7px 10px rgba(255, 255, 255, 0.029),
+          1px 25.7px 15.5px rgba(255, 255, 255, 0.029),
+          1.5px 40.1px 24.1px rgba(255, 255, 255, 0.029),
+          2.5px 66.6px 40px rgba(255, 255, 255, 0.029),
+          5px 133px 80px rgba(255, 255, 255, 0.029);
+      }
+      .card-glassmorphism li {
+        font-size: 38px;
+        letter-spacing: 20px;
+        text-align: center;
+        font-family: "ibm_plex_sansbold";
+      }
+      .etiqueta {
+        font-family: "ibm_plex_serifbold" !important;
+        background-color: #010101;
+        color: #f4f4f4;
+        text-align: center;
+      }
+      .neumorphism-estudios {
+        margin-top: 50px !important;
+        padding: 2em !important;
+        margin-right: 4em !important;
+        border-radius: 50px;
+        background: #f4f4f4;
+        box-shadow: 20px 20px 20px #cfcfcf, -20px -20px 20px #ffffff;
+      }
+      .neumorphism-experiencias {
+        padding: 2em !important;
+        margin-right: 4em !important;
+        margin-bottom: 20px !important;
+        border-radius: 50px;
+        background: #f4f4f4;
+        box-shadow: 20px 20px 20px #cfcfcf, -20px -20px 20px #ffffff;
+      }
+
+      footer {
+        font-family: "ibm_plex_sansregular";
+        font-size: 24px;
+        background-color: #010101;
+        position: relative;
+        z-index: 10;
+      }
+    </style>
+  </head>
+  <body class="container-fluid">
+    <span class="mean-stack text-uppercase">MEAN Stack Developer</span>
+    <nav class="p-3">
+      <ul class="list-unstyled d-flex justify-content-around">
+        <li class="list-inline-item">+54 9 011 2278 8687</li>
+        <li class="list-inline-item">www.linkedin.com/in/gerromano</li>
+        <li class="list-inline-item">https://github.com/gromanoalvarez</li>
+        <li class="list-inline-item">romanoalvarezgerman@gmail.com</li>
+      </ul>
+    </nav>
+
+    <header class="d-flex justify-content-left ms-5 pt-5">
+      <section id="first-box" class="col-5 border me-3 pt-5 pb-5">
+        <div class="box">
+          <h1 class="text-uppercase" id="german">German</h1>
+          <h1 class="text-uppercase" id="romano">Romano</h1>
+          <h1 class="text-uppercase" id="alvarez">Alvarez</h1>
+        </div>
+      </section>
+
+      <h6 id="position-angular" class="text-uppercase text-center">Angular</h6>
+
+      <section id="position-soy" class="col-6 text-start pt-5">
+        <h3 id="position-frontend" class="font-gradient border-bottom pb-3">
+          FRONTEND DEVELOPER
+        </h3>
+        <p class="sobre-mi border-start me-3 p-3 pe-3 pt-4 pb-5">
+          Como Frontend developer siento que es el mejor lugar para dar el
+          máximo, vertiendo la creatividad que ha generado mi pasatiempo como
+          músico y fusionarlo a su vez con lo disciplinado de la formación
+          académica y las experiencias que traigo conmigo, para de este modo
+          llegar a generar interfaces auténticas e innovadoras.
+        </p>
+      </section>
+    </header>
+    <main>
+      <section class="data container-fluid p-5 pb-0 mb-0 me-5">
+        <div class="row justify-content-around pb-0 mb-0 me-5">
+          <aside class="col bg">
+            <svg
+              class="organic"
+              viewBox="0 0 200 200"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="#8A3FFC"
+                d="M43.2,-68.9C53.9,-68.6,59.1,-52.8,66.4,-38.8C73.7,-24.7,83.2,-12.4,83.5,0.2C83.8,12.7,74.8,25.4,64,33.4C53.2,41.4,40.5,44.7,29.5,51.4C18.5,58.2,9.2,68.3,-2.1,71.9C-13.4,75.5,-26.7,72.4,-33.4,63.2C-40.1,54,-40.2,38.6,-49.7,27C-59.2,15.5,-78.3,7.7,-78,0.1C-77.8,-7.4,-58.2,-14.9,-44.9,-20C-31.6,-25,-24.6,-27.7,-18.1,-30.5C-11.7,-33.2,-5.8,-36,5.2,-45C16.2,-54,32.5,-69.2,43.2,-68.9Z"
+                transform="translate(100 100)"
+              />
+            </svg>
+
+            <svg
+              class="organic2"
+              viewBox="0 0 200 200"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="#8A3FFC"
+                d="M29.1,-17.1C38.8,-11,48.6,1.2,46,9.6C43.3,18,28.2,22.7,12.6,32.7C-3,42.7,-19.2,58,-27.3,54.8C-35.3,51.6,-35.3,29.8,-36.9,11.6C-38.5,-6.6,-41.7,-21.2,-35.8,-26.4C-29.9,-31.7,-15,-27.5,-2.6,-25.4C9.7,-23.3,19.3,-23.2,29.1,-17.1Z"
+                transform="translate(100 100)"
+              />
+            </svg>
+
+            <article class="tilt-image" data-tilt>
+              <div class="card-glassmorphism">
+                <ul class="list-unstyled">
+                  <li>MongoDB</li>
+                  <li class="etiqueta">Express</li>
+                  <li>Angular</li>
+                  <li class="etiqueta">NodeJs</li>
+                  <li>JavaScript</li>
+                  <li class="etiqueta">HTML</li>
+                  <li>CSS</li>
+                  <li class="etiqueta">JQuery</li>
+                  <li>Bootstrap</li>
+                  <li class="etiqueta">Adobe XD</li>
+                  <li>Git</li>
+                  <li class="etiqueta">Github</li>
+                  <li>Java</li>
+                  <li class="etiqueta">Inglés</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- <article class="mt-5 tilt-image" data-tilt>
+              <div class=" card-glassmorphism">
+                <h2 class=" gold">Proyectos</h2>
+                <ul class="">
+                  <li>CheckHeart <iframe src="https://gromanoalvarez.github.io/CheckHeart/" frameborder="0"></iframe></li>
+                  <li>Angular <iframe src="https://github.com/gromanoalvarez/Frameworks/tree/main/AprendiendoAngular" frameborder="0"></iframe> </li>
+                </ul>
+              </div>
+            </article> -->
+          </aside>
+
+          <div class="col-7 me-5">
+            <article class="row mb-5 neumorphism-estudios">
+              <h2 class="col-1 vertical-text gold">ESTUDIOS</h2>
+              <div class="col">
+                <h3>TÉCNICO EN DESARROLLO WEB</h3>
+                <h5>
+                  Universidad Nacional de La Matanza - <span>San Justo.</span>
+                </h5>
+                <p>
+                  Programación Orientada a Objetos.<span>
+                    Actualmente en curso - Finaliza 2023.</span
+                  >
+                </p>
+                <div>
+                  <h3>
+                    MASTER EN FRAMEWORKS:
+                    <br />
+                    <span class="text-capitalize"> Angular, react & vue</span>
+                  </h3>
+                  <h5>UDEMY - <span>Capacitación online.</span></h5>
+                  <p>Autor Victor Robles.<span> 2021 - 2022.</span></p>
+                </div>
+                <div>
+                  <h3>PROFESORADO EN BIOLOGÍA</h3>
+                  <h5>
+                    Inst. Superior de Formación Docente y Técnica n°46 -
+                    <span> Ramos Mejía.</span>
+                  </h5>
+                  <p>
+                    Profesor de Biología con trayectoria en Ciencias Naturales
+                    para EGB y Polimodal.<span> Finalizado en 2017.</span>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="row neumorphism-experiencias">
+              <h2 class="col-1 gold vertical-text">EXPERIENCIAS</h2>
+              <div class="col">
+                <h3>ENCARGADO</h3>
+                <h5>CALERA CONGRESO SRL. <span>2020-2021</span></h5>
+                <p>
+                  En mi último empleo, fui encargado de sucursal, presentándome
+                  como líder positivo del personal a cargo, derivando mediante
+                  toma de decisiones y controlando objetivos diarios. Además, me
+                  encargaba de las ventas e incorporación de nuevos clientes,
+                  llevando control de sus cuentas como así también de la caja
+                  diaria, facturación y liquidación de cuentas a los
+                  proveedores, controlando todo el stock que entraba y salía a
+                  diario de la sucursal.
+                  <br />
+                  <span> SUCURSAL BELGRANO - CABA. 4543-5392 DGCEYT</span>
+                </p>
+                <div>
+                  <h3>PROFESOR Y PRECEPTOR</h3>
+                  <h5>
+                    DIRECCION GRAL. DE CULTURA Y EDUCACION.
+                    <span>2013 – 2019</span>
+                  </h5>
+                  <p>
+                    A mis 23 años ya me presentaba en las escuelas como
+                    transmisor de conocimientos, desarrollando actividades como
+                    potenciar habilidades y destrezas que el grupo posea como
+                    así también ayudar a superar aquellos aspectos que
+                    dificulten el desarrollo individual. También a la resolución
+                    de problemáticas diversas ante padres en conjunto con el
+                    equipo psicopedagógico y directivos.
+                    <br />
+                    <span>
+                      ESCUELA NRO. 34 - Miño Gabriel, Director
+                      11-6196-9707</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="p-2">
+      <ul class="list-unstyled d-flex justify-content-around">
+        <li class="list-inline-item">+54 9 011 2278 8687</li>
+        <li class="list-inline-item">www.linkedin.com/in/gerromano</li>
+        <li class="list-inline-item">https://github.com/gromanoalvarez</li>
+        <li class="list-inline-item">romanoalvarezgerman@gmail.com</li>
+      </ul>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- <script type="text/javascript" src="vanilla-tilt.js"></script> -->
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".your-element"), {
+        max: 25,
+        speed: 400,
+      });
+
+      //It also supports NodeList
+      VanillaTilt.init(document.querySelectorAll(".your-element"));
+    </script>
+
+    <script>
+      var VanillaTilt = (function () {
+        "use strict";
+
+        /**
+         * Created by Sergiu Șandor (micku7zu) on 1/27/2017.
+         * Original idea: https://github.com/gijsroge/tilt.js
+         * MIT License.
+         * Version 1.7.2
+         */
+
+        class VanillaTilt {
+          constructor(element, settings = {}) {
+            if (!(element instanceof Node)) {
+              throw (
+                "Can't initialize VanillaTilt because " +
+                element +
+                " is not a Node."
+              );
+            }
+
+            this.width = null;
+            this.height = null;
+            this.clientWidth = null;
+            this.clientHeight = null;
+            this.left = null;
+            this.top = null;
+
+            // for Gyroscope sampling
+            this.gammazero = null;
+            this.betazero = null;
+            this.lastgammazero = null;
+            this.lastbetazero = null;
+
+            this.transitionTimeout = null;
+            this.updateCall = null;
+            this.event = null;
+
+            this.updateBind = this.update.bind(this);
+            this.resetBind = this.reset.bind(this);
+
+            this.element = element;
+            this.settings = this.extendSettings(settings);
+
+            this.reverse = this.settings.reverse ? -1 : 1;
+            this.glare = VanillaTilt.isSettingTrue(this.settings.glare);
+            this.glarePrerender = VanillaTilt.isSettingTrue(
+              this.settings["glare-prerender"]
+            );
+            this.fullPageListening = VanillaTilt.isSettingTrue(
+              this.settings["full-page-listening"]
+            );
+            this.gyroscope = VanillaTilt.isSettingTrue(this.settings.gyroscope);
+            this.gyroscopeSamples = this.settings.gyroscopeSamples;
+
+            this.elementListener = this.getElementListener();
+
+            if (this.glare) {
+              this.prepareGlare();
+            }
+
+            if (this.fullPageListening) {
+              this.updateClientSize();
+            }
+
+            this.addEventListeners();
+            this.reset();
+            this.updateInitialPosition();
+          }
+
+          static isSettingTrue(setting) {
+            return setting === "" || setting === true || setting === 1;
+          }
+
+          /**
+           * Method returns element what will be listen mouse events
+           * @return {Node}
+           */
+          getElementListener() {
+            if (this.fullPageListening) {
+              return window.document;
+            }
+
+            if (typeof this.settings["mouse-event-element"] === "string") {
+              const mouseEventElement = document.querySelector(
+                this.settings["mouse-event-element"]
+              );
+
+              if (mouseEventElement) {
+                return mouseEventElement;
+              }
+            }
+
+            if (this.settings["mouse-event-element"] instanceof Node) {
+              return this.settings["mouse-event-element"];
+            }
+
+            return this.element;
+          }
+
+          /**
+           * Method set listen methods for this.elementListener
+           * @return {Node}
+           */
+          addEventListeners() {
+            this.onMouseEnterBind = this.onMouseEnter.bind(this);
+            this.onMouseMoveBind = this.onMouseMove.bind(this);
+            this.onMouseLeaveBind = this.onMouseLeave.bind(this);
+            this.onWindowResizeBind = this.onWindowResize.bind(this);
+            this.onDeviceOrientationBind = this.onDeviceOrientation.bind(this);
+
+            this.elementListener.addEventListener(
+              "mouseenter",
+              this.onMouseEnterBind
+            );
+            this.elementListener.addEventListener(
+              "mouseleave",
+              this.onMouseLeaveBind
+            );
+            this.elementListener.addEventListener(
+              "mousemove",
+              this.onMouseMoveBind
+            );
+
+            if (this.glare || this.fullPageListening) {
+              window.addEventListener("resize", this.onWindowResizeBind);
+            }
+
+            if (this.gyroscope) {
+              window.addEventListener(
+                "deviceorientation",
+                this.onDeviceOrientationBind
+              );
+            }
+          }
+
+          /**
+           * Method remove event listeners from current this.elementListener
+           */
+          removeEventListeners() {
+            this.elementListener.removeEventListener(
+              "mouseenter",
+              this.onMouseEnterBind
+            );
+            this.elementListener.removeEventListener(
+              "mouseleave",
+              this.onMouseLeaveBind
+            );
+            this.elementListener.removeEventListener(
+              "mousemove",
+              this.onMouseMoveBind
+            );
+
+            if (this.gyroscope) {
+              window.removeEventListener(
+                "deviceorientation",
+                this.onDeviceOrientationBind
+              );
+            }
+
+            if (this.glare || this.fullPageListening) {
+              window.removeEventListener("resize", this.onWindowResizeBind);
+            }
+          }
+
+          destroy() {
+            clearTimeout(this.transitionTimeout);
+            if (this.updateCall !== null) {
+              cancelAnimationFrame(this.updateCall);
+            }
+
+            this.reset();
+
+            this.removeEventListeners();
+            this.element.vanillaTilt = null;
+            delete this.element.vanillaTilt;
+
+            this.element = null;
+          }
+
+          onDeviceOrientation(event) {
+            if (event.gamma === null || event.beta === null) {
+              return;
+            }
+
+            this.updateElementPosition();
+
+            if (this.gyroscopeSamples > 0) {
+              this.lastgammazero = this.gammazero;
+              this.lastbetazero = this.betazero;
+
+              if (this.gammazero === null) {
+                this.gammazero = event.gamma;
+                this.betazero = event.beta;
+              } else {
+                this.gammazero = (event.gamma + this.lastgammazero) / 2;
+                this.betazero = (event.beta + this.lastbetazero) / 2;
+              }
+
+              this.gyroscopeSamples -= 1;
+            }
+
+            const totalAngleX =
+              this.settings.gyroscopeMaxAngleX -
+              this.settings.gyroscopeMinAngleX;
+            const totalAngleY =
+              this.settings.gyroscopeMaxAngleY -
+              this.settings.gyroscopeMinAngleY;
+
+            const degreesPerPixelX = totalAngleX / this.width;
+            const degreesPerPixelY = totalAngleY / this.height;
+
+            const angleX =
+              event.gamma - (this.settings.gyroscopeMinAngleX + this.gammazero);
+            const angleY =
+              event.beta - (this.settings.gyroscopeMinAngleY + this.betazero);
+
+            const posX = angleX / degreesPerPixelX;
+            const posY = angleY / degreesPerPixelY;
+
+            if (this.updateCall !== null) {
+              cancelAnimationFrame(this.updateCall);
+            }
+
+            this.event = {
+              clientX: posX + this.left,
+              clientY: posY + this.top,
+            };
+
+            this.updateCall = requestAnimationFrame(this.updateBind);
+          }
+
+          onMouseEnter() {
+            this.updateElementPosition();
+            this.element.style.willChange = "transform";
+            this.setTransition();
+          }
+
+          onMouseMove(event) {
+            if (this.updateCall !== null) {
+              cancelAnimationFrame(this.updateCall);
+            }
+
+            this.event = event;
+            this.updateCall = requestAnimationFrame(this.updateBind);
+          }
+
+          onMouseLeave() {
+            this.setTransition();
+
+            if (this.settings.reset) {
+              requestAnimationFrame(this.resetBind);
+            }
+          }
+
+          reset() {
+            this.event = {
+              clientX: this.left + this.width / 2,
+              clientY: this.top + this.height / 2,
+            };
+
+            if (this.element && this.element.style) {
+              this.element.style.transform =
+                `perspective(${this.settings.perspective}px) ` +
+                `rotateX(0deg) ` +
+                `rotateY(0deg) ` +
+                `scale3d(1, 1, 1)`;
+            }
+
+            this.resetGlare();
+          }
+
+          resetGlare() {
+            if (this.glare) {
+              this.glareElement.style.transform =
+                "rotate(180deg) translate(-50%, -50%)";
+              this.glareElement.style.opacity = "0";
+            }
+          }
+
+          updateInitialPosition() {
+            if (this.settings.startX === 0 && this.settings.startY === 0) {
+              return;
+            }
+
+            this.onMouseEnter();
+
+            if (this.fullPageListening) {
+              this.event = {
+                clientX:
+                  ((this.settings.startX + this.settings.max) /
+                    (2 * this.settings.max)) *
+                  this.clientWidth,
+                clientY:
+                  ((this.settings.startY + this.settings.max) /
+                    (2 * this.settings.max)) *
+                  this.clientHeight,
+              };
+            } else {
+              this.event = {
+                clientX:
+                  this.left +
+                  ((this.settings.startX + this.settings.max) /
+                    (2 * this.settings.max)) *
+                    this.width,
+                clientY:
+                  this.top +
+                  ((this.settings.startY + this.settings.max) /
+                    (2 * this.settings.max)) *
+                    this.height,
+              };
+            }
+
+            let backupScale = this.settings.scale;
+            this.settings.scale = 1;
+            this.update();
+            this.settings.scale = backupScale;
+            this.resetGlare();
+          }
+
+          getValues() {
+            let x, y;
+
+            if (this.fullPageListening) {
+              x = this.event.clientX / this.clientWidth;
+              y = this.event.clientY / this.clientHeight;
+            } else {
+              x = (this.event.clientX - this.left) / this.width;
+              y = (this.event.clientY - this.top) / this.height;
+            }
+
+            x = Math.min(Math.max(x, 0), 1);
+            y = Math.min(Math.max(y, 0), 1);
+
+            let tiltX = (
+              this.reverse *
+              (this.settings.max - x * this.settings.max * 2)
+            ).toFixed(2);
+            let tiltY = (
+              this.reverse *
+              (y * this.settings.max * 2 - this.settings.max)
+            ).toFixed(2);
+            let angle =
+              Math.atan2(
+                this.event.clientX - (this.left + this.width / 2),
+                -(this.event.clientY - (this.top + this.height / 2))
+              ) *
+              (180 / Math.PI);
+
+            return {
+              tiltX: tiltX,
+              tiltY: tiltY,
+              percentageX: x * 100,
+              percentageY: y * 100,
+              angle: angle,
+            };
+          }
+
+          updateElementPosition() {
+            let rect = this.element.getBoundingClientRect();
+
+            this.width = this.element.offsetWidth;
+            this.height = this.element.offsetHeight;
+            this.left = rect.left;
+            this.top = rect.top;
+          }
+
+          update() {
+            let values = this.getValues();
+
+            this.element.style.transform =
+              "perspective(" +
+              this.settings.perspective +
+              "px) " +
+              "rotateX(" +
+              (this.settings.axis === "x" ? 0 : values.tiltY) +
+              "deg) " +
+              "rotateY(" +
+              (this.settings.axis === "y" ? 0 : values.tiltX) +
+              "deg) " +
+              "scale3d(" +
+              this.settings.scale +
+              ", " +
+              this.settings.scale +
+              ", " +
+              this.settings.scale +
+              ")";
+
+            if (this.glare) {
+              this.glareElement.style.transform = `rotate(${values.angle}deg) translate(-50%, -50%)`;
+              this.glareElement.style.opacity = `${
+                (values.percentageY * this.settings["max-glare"]) / 100
+              }`;
+            }
+
+            this.element.dispatchEvent(
+              new CustomEvent("tiltChange", {
+                detail: values,
+              })
+            );
+
+            this.updateCall = null;
+          }
+
+          /**
+           * Appends the glare element (if glarePrerender equals false)
+           * and sets the default style
+           */
+          prepareGlare() {
+            // If option pre-render is enabled we assume all html/css is present for an optimal glare effect.
+            if (!this.glarePrerender) {
+              // Create glare element
+              const jsTiltGlare = document.createElement("div");
+              jsTiltGlare.classList.add("js-tilt-glare");
+
+              const jsTiltGlareInner = document.createElement("div");
+              jsTiltGlareInner.classList.add("js-tilt-glare-inner");
+
+              jsTiltGlare.appendChild(jsTiltGlareInner);
+              this.element.appendChild(jsTiltGlare);
+            }
+
+            this.glareElementWrapper =
+              this.element.querySelector(".js-tilt-glare");
+            this.glareElement = this.element.querySelector(
+              ".js-tilt-glare-inner"
+            );
+
+            if (this.glarePrerender) {
+              return;
+            }
+
+            Object.assign(this.glareElementWrapper.style, {
+              position: "absolute",
+              top: "0",
+              left: "0",
+              width: "100%",
+              height: "100%",
+              overflow: "hidden",
+              "pointer-events": "none",
+            });
+
+            Object.assign(this.glareElement.style, {
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              "pointer-events": "none",
+              "background-image": `linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)`,
+              transform: "rotate(180deg) translate(-50%, -50%)",
+              "transform-origin": "0% 0%",
+              opacity: "0",
+            });
+
+            this.updateGlareSize();
+          }
+
+          updateGlareSize() {
+            if (this.glare) {
+              const glareSize =
+                (this.element.offsetWidth > this.element.offsetHeight
+                  ? this.element.offsetWidth
+                  : this.element.offsetHeight) * 2;
+
+              Object.assign(this.glareElement.style, {
+                width: `${glareSize}px`,
+                height: `${glareSize}px`,
+              });
+            }
+          }
+
+          updateClientSize() {
+            this.clientWidth =
+              window.innerWidth ||
+              document.documentElement.clientWidth ||
+              document.body.clientWidth;
+
+            this.clientHeight =
+              window.innerHeight ||
+              document.documentElement.clientHeight ||
+              document.body.clientHeight;
+          }
+
+          onWindowResize() {
+            this.updateGlareSize();
+            this.updateClientSize();
+          }
+
+          setTransition() {
+            clearTimeout(this.transitionTimeout);
+            this.element.style.transition =
+              this.settings.speed + "ms " + this.settings.easing;
+            if (this.glare)
+              this.glareElement.style.transition = `opacity ${this.settings.speed}ms ${this.settings.easing}`;
+
+            this.transitionTimeout = setTimeout(() => {
+              this.element.style.transition = "";
+              if (this.glare) {
+                this.glareElement.style.transition = "";
+              }
+            }, this.settings.speed);
+          }
+
+          /**
+           * Method return patched settings of instance
+           * @param {boolean} settings.reverse - reverse the tilt direction
+           * @param {number} settings.max - max tilt rotation (degrees)
+           * @param {startX} settings.startX - the starting tilt on the X axis, in degrees. Default: 0
+           * @param {startY} settings.startY - the starting tilt on the Y axis, in degrees. Default: 0
+           * @param {number} settings.perspective - Transform perspective, the lower the more extreme the tilt gets
+           * @param {string} settings.easing - Easing on enter/exit
+           * @param {number} settings.scale - 2 = 200%, 1.5 = 150%, etc..
+           * @param {number} settings.speed - Speed of the enter/exit transition
+           * @param {boolean} settings.transition - Set a transition on enter/exit
+           * @param {string|null} settings.axis - What axis should be disabled. Can be X or Y
+           * @param {boolean} settings.glare - What axis should be disabled. Can be X or Y
+           * @param {number} settings.max-glare - the maximum "glare" opacity (1 = 100%, 0.5 = 50%)
+           * @param {boolean} settings.glare-prerender - false = VanillaTilt creates the glare elements for you, otherwise
+           * @param {boolean} settings.full-page-listening - If true, parallax effect will listen to mouse move events on the whole document, not only the selected element
+           * @param {string|object} settings.mouse-event-element - String selector or link to HTML-element what will be listen mouse events
+           * @param {boolean} settings.reset - false = If the tilt effect has to be reset on exit
+           * @param {gyroscope} settings.gyroscope - Enable tilting by deviceorientation events
+           * @param {gyroscopeSensitivity} settings.gyroscopeSensitivity - Between 0 and 1 - The angle at which max tilt position is reached. 1 = 90deg, 0.5 = 45deg, etc..
+           * @param {gyroscopeSamples} settings.gyroscopeSamples - How many gyroscope moves to decide the starting position.
+           */
+          extendSettings(settings) {
+            let defaultSettings = {
+              reverse: false,
+              max: 15,
+              startX: 0,
+              startY: 0,
+              perspective: 1000,
+              easing: "cubic-bezier(.03,.98,.52,.99)",
+              scale: 1,
+              speed: 300,
+              transition: true,
+              axis: null,
+              glare: false,
+              "max-glare": 1,
+              "glare-prerender": false,
+              "full-page-listening": false,
+              "mouse-event-element": null,
+              reset: true,
+              gyroscope: true,
+              gyroscopeMinAngleX: -45,
+              gyroscopeMaxAngleX: 45,
+              gyroscopeMinAngleY: -45,
+              gyroscopeMaxAngleY: 45,
+              gyroscopeSamples: 10,
+            };
+
+            let newSettings = {};
+            for (var property in defaultSettings) {
+              if (property in settings) {
+                newSettings[property] = settings[property];
+              } else if (this.element.hasAttribute("data-tilt-" + property)) {
+                let attribute = this.element.getAttribute(
+                  "data-tilt-" + property
+                );
+                try {
+                  newSettings[property] = JSON.parse(attribute);
+                } catch (e) {
+                  newSettings[property] = attribute;
+                }
+              } else {
+                newSettings[property] = defaultSettings[property];
+              }
+            }
+
+            return newSettings;
+          }
+
+          static init(elements, settings) {
+            if (elements instanceof Node) {
+              elements = [elements];
+            }
+
+            if (elements instanceof NodeList) {
+              elements = [].slice.call(elements);
+            }
+
+            if (!(elements instanceof Array)) {
+              return;
+            }
+
+            elements.forEach((element) => {
+              if (!("vanillaTilt" in element)) {
+                element.vanillaTilt = new VanillaTilt(element, settings);
+              }
+            });
+          }
+        }
+
+        if (typeof document !== "undefined") {
+          /* expose the class to window */
+          window.VanillaTilt = VanillaTilt;
+
+          /**
+           * Auto load
+           */
+          VanillaTilt.init(document.querySelectorAll("[data-tilt]"));
+        }
+
+        return VanillaTilt;
+      })();
+    </script>
+  </body>
+</html>

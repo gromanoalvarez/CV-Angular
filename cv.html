@@ -84,52 +84,19 @@
       }
       body {
         position: relative;
-        background: rgba(0, 0, 0, 1);
-        background: -moz-linear-gradient(
-          top,
-          rgba(0, 0, 0, 1) 4%,
-          rgba(16, 22, 102, 1) 47%,
-          rgba(35, 49, 227, 1) 100%
-        );
-        background: -webkit-gradient(
-          left top,
-          left bottom,
-          color-stop(4%, rgba(0, 0, 0, 1)),
-          color-stop(47%, rgba(16, 22, 102, 1)),
-          color-stop(100%, rgba(35, 49, 227, 1))
-        );
-        background: -webkit-linear-gradient(
-          top,
-          rgba(0, 0, 0, 1) 4%,
-          rgba(16, 22, 102, 1) 47%,
-          rgba(35, 49, 227, 1) 100%
-        );
-        background: -o-linear-gradient(
-          top,
-          rgba(0, 0, 0, 1) 4%,
-          rgba(16, 22, 102, 1) 47%,
-          rgba(35, 49, 227, 1) 100%
-        );
-        background: -ms-linear-gradient(
-          top,
-          rgba(0, 0, 0, 1) 4%,
-          rgba(16, 22, 102, 1) 47%,
-          rgba(35, 49, 227, 1) 100%
-        );
-        background: linear-gradient(
-          to bottom,
-          rgba(0, 0, 0, 1) 4%,
-          rgba(16, 22, 102, 1) 47%,
-          rgba(35, 49, 227, 1) 100%
-        );
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#2331e3', GradientType=0 );
+        background: rgba(0,0,0,1);
+background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 2%, rgba(36,0,70,1) 8%, rgba(60,9,108,1) 16%, rgba(90,24,154,1) 26%, rgba(123,44,191,1) 39%, rgba(157,78,221,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(2%, rgba(0,0,0,1)), color-stop(8%, rgba(36,0,70,1)), color-stop(16%, rgba(60,9,108,1)), color-stop(26%, rgba(90,24,154,1)), color-stop(39%, rgba(123,44,191,1)), color-stop(100%, rgba(157,78,221,1)));
+background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 2%, rgba(36,0,70,1) 8%, rgba(60,9,108,1) 16%, rgba(90,24,154,1) 26%, rgba(123,44,191,1) 39%, rgba(157,78,221,1) 100%);
+background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 2%, rgba(36,0,70,1) 8%, rgba(60,9,108,1) 16%, rgba(90,24,154,1) 26%, rgba(123,44,191,1) 39%, rgba(157,78,221,1) 100%);
+background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 2%, rgba(36,0,70,1) 8%, rgba(60,9,108,1) 16%, rgba(90,24,154,1) 26%, rgba(123,44,191,1) 39%, rgba(157,78,221,1) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 2%, rgba(36,0,70,1) 8%, rgba(60,9,108,1) 16%, rgba(90,24,154,1) 26%, rgba(123,44,191,1) 39%, rgba(157,78,221,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#9d4edd', GradientType=0 );
+        
+        
         color: #c6c6c6;
       }
-      .font-gradient {
-        background: -webkit-linear-gradient(180deg, #80ffec, #572ee5);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
+
       .container-fluid {
         padding: 0 !important;
       }
@@ -140,13 +107,15 @@
       }
       #first-box {
         height: 500px;
+        width: 500px;
         background-color: #f4f4f4;
-        background-image: url(https://www.ibm.com/images/portal/A001356T22555K86/essential/megamenu-pictogram-the-essentials.png);
-        background-size: 30%;
-        background-repeat: repeat;
-        background-position-x: 20px;
-        background-position-y: -14px;
+        background-image: url(https://scontent.fepa9-1.fna.fbcdn.net/v/t39.30808-6/fr/cp0/e15/q65/271853760_10225280347490716_3347622718028009502_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=110474&efg=eyJpIjoidCJ9&_nc_ohc=8DRosCX1wxoAX-pPY0e&_nc_ht=scontent.fepa9-1.fna&oh=00_AT9CY3fnghgrHi0mzj41-Ku9LJV2Iqq-3MptC4szAWm-EA&oe=61EBD7A9);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 50px 0px 50px 0px;
         position: relative;
+        top: 150px;
+        left: 0px;
       }
       .box {
         display: flex;
@@ -156,37 +125,6 @@
         position: absolute;
         top: 0px;
         left: 0px;
-      }
-      #german {
-        font-size: 3.6em;
-        font-weight: bold;
-        writing-mode: vertical-lr;
-        text-orientation: sideways;
-        letter-spacing: 0.51em;
-        transform: rotate(180deg);
-        margin-top: -6px !important;
-        margin-left: 0px !important;
-        position: absolute;
-        top: -22px;
-        left: 30px;
-      }
-      #romano {
-        font-size: 3.52em;
-        writing-mode: vertical-rl;
-        text-orientation: sideways-right;
-        letter-spacing: 0.529em;
-        margin: 0em 0em 0em 2.5em !important;
-        padding-left: 10px !important;
-        padding-bottom: 40px !important;
-        background-color: #010101;
-        color: #f4f4f4;
-      }
-      #alvarez {
-        font-size: 3.35em;
-        writing-mode: vertical-lr;
-        text-orientation: sideways;
-        letter-spacing: 0.5em;
-        margin-right: 40px !important;
       }
       .mean-stack {
         background-color: transparent;
@@ -205,15 +143,20 @@
         font-size: 24px;
       }
       h1 {
-        color: #010101;
-        font-size: 50px;
         font-family: "ibm_plex_sansbold";
+        color: transparent;
+        font-size: 50px;
+        letter-spacing: 5px;
+        font-weight: bold;
+        background-image: linear-gradient(90deg, #e56ef5 50% ,  #7B2CBF );
+        -webkit-background-clip: text;
       }
       h2 {
         font-family: "ibm_plex_serifbold";
       }
       h3 {
         font-family: "ibm_plex_serifbold";
+        
       }
       h5 {
         font-family: "ibm_plex_seriftext";
@@ -233,16 +176,7 @@
         font-size: 50px;
         letter-spacing: 5px;
         font-weight: bold;
-        background-image: linear-gradient(
-          to top,
-          #462523 0,
-          #cb9b51 22%,
-          #f6e27a 45%,
-          #f6f2c0 50%,
-          #f6e27a 55%,
-          #cb9b51 78%,
-          #462523 100%
-        );
+        background-image: linear-gradient(to bottom, #ffd000, rgb(255, 187, 0) );
         -webkit-background-clip: text;
       }
       .vertical-text {
@@ -253,9 +187,9 @@
       #position-frontend {
         position: relative;
         top: 0px;
-        left: -80px;
+        left: -280px;
         font-size: 52px;
-        width: 105%;
+        width: 160%;
       }
       #position-angular {
         border: #010101 1px solid;
@@ -279,12 +213,13 @@
       }
       .organic {
         position: absolute;
+        top: 180px;
         left: 0px;
         z-index: 0;
       }
       .organic2 {
         position: absolute;
-        bottom: 50px;
+        top: 620px;
         z-index: 0;
       }
       .bg {
@@ -295,7 +230,7 @@
       }
       .tilt-image {
         position: relative;
-        top: 50px;
+        top: 250px;
         left: 0px;
         display: flex;
         justify-content: center;
@@ -330,8 +265,8 @@
       }
       .etiqueta {
         font-family: "ibm_plex_serifbold" !important;
-        background-color: #010101;
-        color: #f4f4f4;
+        background-color: #ffd000;
+        color: #010101;
         text-align: center;
       }
       .neumorphism-estudios {
@@ -361,40 +296,29 @@
     </style>
   </head>
   <body class="container-fluid">
-    <span class="mean-stack text-uppercase">MEAN Stack Developer</span>
     <nav class="p-3">
       <ul class="list-unstyled d-flex justify-content-around">
-        <li class="list-inline-item">+54 9 011 2278 8687</li>
-        <li class="list-inline-item">www.linkedin.com/in/gerromano</li>
-        <li class="list-inline-item">https://github.com/gromanoalvarez</li>
-        <li class="list-inline-item">romanoalvarezgerman@gmail.com</li>
+        <li class="list-inline-item">+54 9 011 4185 9558</li>
+        <li class="list-inline-item">www.linkedin.com/in/ncandia</li>
+        <li class="list-inline-item">natalia.candia.villalba@gmail.com</li>
       </ul>
     </nav>
 
-    <header class="d-flex justify-content-left ms-5 pt-5">
+    <header class="d-flex justify-content-left ms-5 ">
       <section id="first-box" class="col-5 border me-3 pt-5 pb-5">
-        <div class="box">
-          <h1 class="text-uppercase" id="german">German</h1>
-          <h1 class="text-uppercase" id="romano">Romano</h1>
-          <h1 class="text-uppercase" id="alvarez">Alvarez</h1>
-        </div>
+        <div class="box"></div>
       </section>
 
-      <h6 id="position-angular" class="text-uppercase text-center">Angular</h6>
-
-      <section id="position-soy" class="col-6 text-start pt-5">
-        <h3 id="position-frontend" class="font-gradient border-bottom pb-3">
-          FRONTEND DEVELOPER
-        </h3>
-        <p class="sobre-mi border-start me-3 p-3 pe-3 pt-4 pb-5">
-          Como Frontend developer siento que es el mejor lugar para dar el
-          máximo, vertiendo la creatividad que ha generado mi pasatiempo como
-          músico y fusionarlo a su vez con lo disciplinado de la formación
-          académica y las experiencias que traigo conmigo, para de este modo
-          llegar a generar interfaces auténticas e innovadoras.
+      <section class="col-6 text-start pt-5">
+        <h1 id="position-frontend" class="border-bottom pb-3">
+          Natalia Marisol, Candia Villalba
+        </h1>
+        <p class="sobre-mi border-start me-3 p-3 pe-3 pt-4 pb-3">
+          Me caracterizo por tener gran desempeño y rapidez en el aprendizaje, experiencia amplia en administración y ventas, gran capacidad analítica y resolución eficiente como asi también buen manejo de valores. Reconocida como una persona positiva, de buen manejo interpersonal, habituada a trabajar con diferentes rangos de una empresa a fin de llegar a objetivos comunes.
         </p>
       </section>
     </header>
+
     <main>
       <section class="data container-fluid p-5 pb-0 mb-0 me-5">
         <div class="row justify-content-around pb-0 mb-0 me-5">
@@ -423,23 +347,23 @@
               />
             </svg>
 
+
             <article class="tilt-image" data-tilt>
               <div class="card-glassmorphism">
                 <ul class="list-unstyled">
-                  <li>MongoDB</li>
-                  <li class="etiqueta">Express</li>
-                  <li>Angular</li>
-                  <li class="etiqueta">NodeJs</li>
-                  <li>JavaScript</li>
-                  <li class="etiqueta">HTML</li>
-                  <li>CSS</li>
-                  <li class="etiqueta">JQuery</li>
-                  <li>Bootstrap</li>
-                  <li class="etiqueta">Adobe XD</li>
-                  <li>Git</li>
-                  <li class="etiqueta">Github</li>
-                  <li>Java</li>
-                  <li class="etiqueta">Inglés</li>
+                  <li class="etiqueta">JIRA</li>
+                  <li>Tango</li>
+                  <li class="etiqueta"> Veraz</li>
+                  <li>BanTotal</li>
+                  <li class="etiqueta">Wok</li>
+                  <li>Salesforce</li>
+                  <li class="etiqueta">Doc Approver</li>
+                  <li>Acuity</li>
+                  <li class="etiqueta">Google Suite</li>
+                  <li>Nosis</li>
+                  <li class="etiqueta">Bliss Phone</li>
+                  <li>CRM Bliss</li>
+                  <li class="etiqueta">Microsoft Office</li>
                 </ul>
               </div>
             </article>
@@ -455,38 +379,80 @@
             </article> -->
           </aside>
 
-          <div class="col-7 me-5">
+          <div class="col-7">
             <article class="row mb-5 neumorphism-estudios">
               <h2 class="col-1 vertical-text gold">ESTUDIOS</h2>
+
               <div class="col">
-                <h3>TÉCNICO EN DESARROLLO WEB</h3>
-                <h5>
-                  Universidad Nacional de La Matanza - <span>San Justo.</span>
-                </h5>
-                <p>
-                  Programación Orientada a Objetos.<span>
-                    Actualmente en curso - Finaliza 2023.</span
-                  >
-                </p>
                 <div>
-                  <h3>
-                    MASTER EN FRAMEWORKS:
-                    <br />
-                    <span class="text-capitalize"> Angular, react & vue</span>
-                  </h3>
-                  <h5>UDEMY - <span>Capacitación online.</span></h5>
-                  <p>Autor Victor Robles.<span> 2021 - 2022.</span></p>
+                  <h3>Administración de Empresas</h3>
+                  <h5>Universidad Nacional de La Matanza - <span>San Justo.</span></h5>
+                  <p>2do año en curso</p>
+                </div>
+
+                <div>
+                  <h3>Martillero, Corredor Público y Tasador</h3>
+                  <h5>Universidad Nacional de La Matanza - <span>San Justo.</span></h5>
+                  <p>Egresada 2021 - Titulo en Trámite</p>
+                </div>
+
+                <div>
+                  <h3>Bachiller en Economía y Gestión de las Organizaciones</h3>
+                  <h5>Instituto Crucero General Manuel Belgrano</h5>
+                  <p>Egresada 2007</p>
+                </div>
+            </article>
+
+            <article class="row mb-5 neumorphism-estudios">
+              <h2 class="col-1 vertical-text gold">CURSOS</h2>
+              <div class="col">
+                <div>
+                  <h3>Data Analytics</h3>
+                  <h5>CODERHOUSE</h5>
+                  <p>En curso</p>
                 </div>
                 <div>
-                  <h3>PROFESORADO EN BIOLOGÍA</h3>
-                  <h5>
-                    Inst. Superior de Formación Docente y Técnica n°46 -
-                    <span> Ramos Mejía.</span>
-                  </h5>
-                  <p>
-                    Profesor de Biología con trayectoria en Ciencias Naturales
-                    para EGB y Polimodal.<span> Finalizado en 2017.</span>
-                  </p>
+                  <h3>Operador PC Office Avanzado</h3>
+                  <h5>Instituto Superior Monseñor Bufano C.E.P.T.I.</h5>
+                  <p>Egresada 2007</p>
+                </div>
+              </div>
+            </div>
+            </article>
+
+            <article class="row neumorphism-experiencias">
+              <h2 class="col-1 vertical-text gold">Idiomas</h2>
+              <div class="col">
+
+                <div>
+                    <h3>Inglés</h3>
+                    <p>Escrito Intermedio y Oral Intermedio</p>
+                </div>
+                  
+                <div>
+                  <h3>Portugués</h3>
+                  <p>Escrito Básico y Oral Básico</p>
+                </div>
+  
+                <div>
+                  <h3>Guaraní</h3>
+                  <p>Escrito Básico y Oral Nativo</p>
+                </div>
+                  
+                <div>
+                  <h3>Español</h3>
+                  <p>Escrito Nativo y Oral Nativo</p>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="row neumorphism-experiencias">
+              <h2 class="col-1 vertical-text gold">Movilidad</h2>
+              <div class="col">            
+                <div>
+                    <h3>Licencia B1</h3>
+                    <p>Movilidad propia</p>
                 </div>
               </div>
             </article>
@@ -494,41 +460,92 @@
             <article class="row neumorphism-experiencias">
               <h2 class="col-1 gold vertical-text">EXPERIENCIAS</h2>
               <div class="col">
-                <h3>ENCARGADO</h3>
-                <h5>CALERA CONGRESO SRL. <span>2020-2021</span></h5>
-                <p>
-                  En mi último empleo, fui encargado de sucursal, presentándome
-                  como líder positivo del personal a cargo, derivando mediante
-                  toma de decisiones y controlando objetivos diarios. Además, me
-                  encargaba de las ventas e incorporación de nuevos clientes,
-                  llevando control de sus cuentas como así también de la caja
-                  diaria, facturación y liquidación de cuentas a los
-                  proveedores, controlando todo el stock que entraba y salía a
-                  diario de la sucursal.
-                  <br />
-                  <span> SUCURSAL BELGRANO - CABA. 4543-5392 DGCEYT</span>
-                </p>
+
                 <div>
-                  <h3>PROFESOR Y PRECEPTOR</h3>
-                  <h5>
-                    DIRECCION GRAL. DE CULTURA Y EDUCACION.
-                    <span>2013 – 2019</span>
-                  </h5>
+                  <h3>DeliCandy - Propietaria, Gerente</h3>
+                <h5>ENE 2020 - Actualidad</h5>
+                <p>
+                  Pasteleria Artesanal. En este emprendimiento personal valoré la importancia de las redes sociales y me volqué de lleno al Social Media Marketing que es fundamental para la visibilidad de la marca.
+                </p>
+                </div>
+
+                <div>
+                  <h3>UBER Argentina, Expert CX</h3>
+                  <h5>ENE 2019 - OCT 2020</h5>
                   <p>
-                    A mis 23 años ya me presentaba en las escuelas como
-                    transmisor de conocimientos, desarrollando actividades como
-                    potenciar habilidades y destrezas que el grupo posea como
-                    así también ayudar a superar aquellos aspectos que
-                    dificulten el desarrollo individual. También a la resolución
-                    de problemáticas diversas ante padres en conjunto con el
-                    equipo psicopedagógico y directivos.
-                    <br />
-                    <span>
-                      ESCUELA NRO. 34 - Miño Gabriel, Director
-                      11-6196-9707</span
-                    >
+                    Lider de equipo de escalaciones de phone support, control y resolución de casos especiales, realización de informes de gestión periódicos. 
+                    Lider de equipo de prevención de fraude in app, armado de proceso de detección de cuentas fraudulentas, seguimiento en conjunto con sector DevOps. 
+                    Oradora en sesiones informativas para partners en grupos de hasta 30 personas.
+                    Carga de documentación, creación de cuentas y aprobación de los mismos para Argentina y Brasil.
+                    Creación de menúes para la región Latam de Uber Eats  mediante Wok.
+                    Creadora de contenido, diseño y desarrollo de Briefing a través de Data Analytics semanal con instructivos actualizados y métricas.
+                    Atención al cliente presencial y virtual de app tecnológica.
                   </p>
                 </div>
+                
+                <div>
+                  <h3>Banco Supervielle SA, Oficial Pyme
+                  </h3>
+                  <h5>ABRIL 2013 A MAYO 2018</h5>
+                  <p>
+                    Comercialización de paquetes emprendedor Pyme a personas físicas y jurídicas. 
+                    Crosselling y upselling para prestamos, tarjetas de crédito y factoring.
+                    Detección de documentación apócrifa e implementación de sistema de prevención de lavado de activos.
+                    Venta en frío a locales comerciales y empresas de las zonas de influencia de las sucursales. 
+                    Presupuesto anual propio.
+                    Carga de legajos, revisión de documentación legal y contable, armado de propuestas según calificación crediticia del prospecto.
+                    Adhesión y configuración de terminales Lapos y Posnet. 
+                  </p>
+                </div>
+
+                <div>
+                  <h3>Ponte Guapa, Propietaria Gerente</h3>
+                  <h5>DIC 2015 - DIC 2019</h5>
+                  <p>
+                    Desarrollé una marca propia de indumentaria femenina con sede y local comercial de atención al público.
+                    Dirigir, controlar, gestionar y proyectar el negocio.
+                    Supervisión de empleados, el equipo se componía de 5 personas.
+                    Marketing y publicidad de la marca en redes sociales, publicidad en TV, desfiles, eventos (Sponsoreo de maratones realizadas junto al municipio). 
+                    Manejo a proveeedores, facturación, trámites públicos, inscripciones, habilitaciones, AFIP, ARBA.              
+                  </p>
+                </div>
+                
+                <div>
+                  <h3>Gedesco Services Spain, Administrativa Apoderada</h3>
+                <h5>MAYO 2012 A NOV 2012</h5>
+                <p>
+                  Operaciones de descuento de cheques de 3eros con clientes de Argentina y España.
+                  Poder de firma, administración de documentación, manejo de presupuestos, firma de contratos de mutuo, verificación de informes comerciales y contables.
+                  Normativa BCRA, NOSIS, VERAZ, ICB.
+                  Facturación, tramites bancarios, control libros IVA compras e IVA ventas, pago a proveedores, cobranzas y conciliación de cuentas corrientes.
+                  Realización de informes periódicos.
+                </p>
+                </div>
+
+                <div>
+                  <h3>Rio Informática SA, Ejecutiva de cuentas</h3>
+                <h5>NOV 2010 A ABRIL 2012</h5>
+                <p>
+                  Venta corporativa de software y hardware.
+                  Atención de cartera de clientes existentes y captación de nuevos clientes.
+                  Preparación y participación en concursos y licitaciones de entes Gubernamentales.
+                  Capacitación permanente y asistencia a trainings en tecnologías.
+                  Facturación, ventas al exterior, pago a proveedores, armado de presupuestos, bancos.
+                  Ventas online y por Mercado libre.
+                </p>
+                </div>
+
+                <div>
+                  <h3>Swiss Medical- Circulo Médico- OSPIF, Administrativa  de afiliaciones</h3>
+                <h5>MAR 2008 A AGO 2010</h5>
+                <p>
+                  Desregulación de obras sociales.
+                  Recepción presencial y telefónica a afiliados, carga de datos, documentación.
+                  Promoción de planes pre-pagos, cambios de obra social, reglamentación ANSES y SSS, control de cobranzas.
+                  Cierre de tratos con trabajadores en relación de dependencia y monotributistas.
+                </p>
+                </div>
+
               </div>
             </article>
           </div>
@@ -538,10 +555,9 @@
 
     <footer class="p-2">
       <ul class="list-unstyled d-flex justify-content-around">
-        <li class="list-inline-item">+54 9 011 2278 8687</li>
-        <li class="list-inline-item">www.linkedin.com/in/gerromano</li>
-        <li class="list-inline-item">https://github.com/gromanoalvarez</li>
-        <li class="list-inline-item">romanoalvarezgerman@gmail.com</li>
+        <li class="list-inline-item">+54 9 011 4185 9558</li>
+        <li class="list-inline-item">www.linkedin.com/in/ncandia</li>
+        <li class="list-inline-item">natalia.candia.villalba@gmail.com</li>
       </ul>
     </footer>
     <script

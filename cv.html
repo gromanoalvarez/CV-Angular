@@ -192,7 +192,7 @@
         background-color: transparent;
         max-height: 91%;
         position: absolute;
-        bottom: 48px;
+        bottom: 180px;
         right: 3%;
         font-family: "ibm_plex_serifbold";
         font-size: 54px;
@@ -202,7 +202,7 @@
         letter-spacing: 2px;
       }
       .sobre-mi {
-        font-size: 24px;
+        font-size: 27px;
       }
       h1 {
         color: #010101;
@@ -226,7 +226,7 @@
       p {
         font-family: "ibm_plex_seriflight";
         font-weight: bold;
-        font-size: 18px;
+        font-size: 24px;
       }
       .gold {
         color: transparent;
@@ -269,7 +269,13 @@
         font-family: "ibm_plex_serifbold";
         padding-left: 80px !important;
       }
-      main,
+      main{
+        margin-top: 0px !important;
+        padding-bottom: 50px !important;
+        background-color: #f4f4f4;
+        /* color: #262626; */
+        color: #525252;
+      }
       .data {
         margin-top: 0px !important;
         margin-bottom: 0px !important;
@@ -280,11 +286,12 @@
       .organic {
         position: absolute;
         left: 0px;
+        top: 150px;
         z-index: 0;
       }
       .organic2 {
         position: absolute;
-        bottom: 50px;
+        bottom: -180px;
         z-index: 0;
       }
       .bg {
@@ -333,6 +340,9 @@
         background-color: #010101;
         color: #f4f4f4;
         text-align: center;
+        margin-top: 0.7em !important;
+        margin-bottom: 0.7em !important;
+
       }
       .neumorphism-estudios {
         margin-top: 50px !important;
@@ -351,13 +361,6 @@
         box-shadow: 20px 20px 20px #cfcfcf, -20px -20px 20px #ffffff;
       }
 
-      footer {
-        font-family: "ibm_plex_sansregular";
-        font-size: 24px;
-        background-color: #010101;
-        position: relative;
-        z-index: 10;
-      }
     </style>
   </head>
   <body class="container-fluid">
@@ -371,7 +374,7 @@
       </ul>
     </nav>
 
-    <header class="d-flex justify-content-left ms-5 pt-5">
+    <header class="d-flex justify-content-left ms-5 mt-5 pt-5">
       <section id="first-box" class="col-5 border me-3 pt-5 pb-5">
         <div class="box">
           <h1 class="text-uppercase" id="german">German</h1>
@@ -431,15 +434,16 @@
                   <li>Angular</li>
                   <li class="etiqueta">NodeJs</li>
                   <li>JavaScript</li>
-                  <li class="etiqueta">HTML</li>
-                  <li>CSS</li>
-                  <li class="etiqueta">JQuery</li>
-                  <li>Bootstrap</li>
-                  <li class="etiqueta">Adobe XD</li>
+                  <li class="etiqueta"> TypeScript</li>
+                  <li >JQuery</li>
+                  <li class="etiqueta"> Bootstrap</li>
+                  <li >HTML</li>
+                  <li class="etiqueta">CSS</li>
                   <li>Git</li>
-                  <li class="etiqueta">Github</li>
-                  <li>Java</li>
-                  <li class="etiqueta">Inglés</li>
+                  <li class="etiqueta"> Github</li>
+                  <li >Adobe XD</li>
+                  <li class="etiqueta">Java</li>
+                  <li >Inglés</li>
                 </ul>
               </div>
             </article>
@@ -455,7 +459,7 @@
             </article> -->
           </aside>
 
-          <div class="col-7 me-5">
+          <div class="col-7 me-5 mt-5">
             <article class="row mb-5 neumorphism-estudios">
               <h2 class="col-1 vertical-text gold">ESTUDIOS</h2>
               <div class="col">
@@ -536,14 +540,6 @@
       </section>
     </main>
 
-    <footer class="p-2">
-      <ul class="list-unstyled d-flex justify-content-around">
-        <li class="list-inline-item">+54 9 011 2278 8687</li>
-        <li class="list-inline-item">www.linkedin.com/in/gerromano</li>
-        <li class="list-inline-item">https://github.com/gromanoalvarez</li>
-        <li class="list-inline-item">romanoalvarezgerman@gmail.com</li>
-      </ul>
-    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

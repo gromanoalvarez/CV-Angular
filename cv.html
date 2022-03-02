@@ -159,7 +159,6 @@
       }
       #german {
         font-size: 3.6em;
-        font-weight: bold;
         writing-mode: vertical-lr;
         text-orientation: sideways;
         letter-spacing: 0.51em;
@@ -192,14 +191,14 @@
         background-color: transparent;
         max-height: 91%;
         position: absolute;
-        bottom: 580px;
+        top: 200px;
         right: 3%;
         font-family: "ibm_plex_serifbold";
         font-size: 54px;
         writing-mode: vertical-rl;
         text-orientation: upright;
         z-index: 1;
-        letter-spacing: 5px;
+        letter-spacing: 35px;
       }
       .sobre-mi {
         font-size: 27px;
@@ -217,7 +216,7 @@
         /* background: -webkit-linear-gradient(180deg, #80ffec 5%, #0062FF 90%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; */
-        color: #0062FF;
+        color: #0062ff;
       }
       h5 {
         font-family: "ibm_plex_seriftext";
@@ -267,7 +266,7 @@
         font-family: "ibm_plex_serifbold";
         padding-left: 80px !important;
       }
-      main{
+      main {
         margin-top: 0px !important;
         padding-bottom: 50px !important;
         background-color: #f4f4f4;
@@ -300,7 +299,7 @@
       }
       .tilt-image {
         position: relative;
-        top: 145px;
+        top: 38px;
         left: 0px;
         display: flex;
         justify-content: center;
@@ -308,7 +307,7 @@
         padding: 0px !important;
       }
       .card-glassmorphism {
-        width: 84%;
+        width: 100%;
         /* box-shadow: 0 0 1rem 0 rgb(0 0 0 / 20%); */
         border-radius: 50px;
         /* backdrop-filter: blur(10px); */
@@ -328,7 +327,7 @@
       }
       .card-glassmorphism li {
         font-size: 38px;
-        letter-spacing: 2px;
+        letter-spacing: 8px;
         text-align: center;
         font-family: "ibm_plex_sansbold";
       }
@@ -337,9 +336,8 @@
         background-color: #010101;
         color: #f4f4f4;
         text-align: center;
-        margin-top: 0.8em !important;
-        margin-bottom: 0.8em !important;
-
+        margin-top: 0.45em !important;
+        margin-bottom: 0.45em !important;
       }
       .neumorphism-estudios {
         margin-top: 50px !important;
@@ -351,13 +349,12 @@
       }
       .neumorphism-experiencias {
         padding: 2em !important;
-        margin-right: 4em !important;
+        margin-right: 10em !important;
         margin-bottom: 20px !important;
         border-radius: 50px;
         background: #f4f4f4;
         box-shadow: 20px 20px 20px #cfcfcf, -20px -20px 20px #ffffff;
       }
-
     </style>
   </head>
   <body class="container-fluid">
@@ -368,6 +365,7 @@
         <li class="list-inline-item">www.linkedin.com/in/gerromano</li>
         <li class="list-inline-item">https://github.com/gromanoalvarez</li>
         <li class="list-inline-item">romanoalvarezgerman@gmail.com</li>
+        <!-- podria ir dentro de una etiqueta A con href="mailto:ejemplo@mail.com" -->
       </ul>
     </nav>
 
@@ -384,48 +382,63 @@
 
       <section id="position-soy" class="col-6 text-start pt-5">
         <h3 id="position-frontend" class="font-gradient border-bottom pb-3">
-          WEB DEVELOPER
+          WEB DEVELOPER JR
         </h3>
         <p class="sobre-mi border-start me-3 p-3 pe-3 pt-4 pb-5">
-          Como developer siento que es el mejor lugar para dar el
-          máximo, vertiendo la creatividad que ha generado mi pasatiempo como
-          músico y fusionarlo a su vez con lo disciplinado de la formación
-          académica y las experiencias que traigo conmigo, para de este modo
-          llegar a generar webs auténticas e innovadoras.
+          Soy de San Justo, Buenos Aires, como programador siento que este el mejor lugar para dar el máximo,
+          vertiendo la creatividad que ha generado mi pasatiempo como músico y
+          fusionarlo a su vez con lo disciplinado de la formación académica y
+          las experiencias que traigo conmigo, para de este modo llegar a
+          generar webs auténticas e innovadoras.
         </p>
       </section>
     </header>
+
     <main>
       <section class="data container-fluid p-5 pb-0 mb-0 me-5">
         <div class="row justify-content-around pb-0 mb-0 me-5">
           <aside class="col bg">
-
-            <svg class="organic" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-              <path fill="#0062FF" d="M26.9,-37.2C37.6,-23,51,-17.2,53.5,-8.6C55.9,-0.1,47.4,11.2,41.4,26.1C35.4,41,31.9,59.6,24.5,58.4C17.1,57.2,5.8,36.2,-6.1,27.3C-18.1,18.4,-30.6,21.7,-43.6,16.7C-56.5,11.7,-69.8,-1.4,-71.4,-16.2C-73.1,-30.9,-63.1,-47.1,-49.3,-60.7C-35.5,-74.4,-17.7,-85.3,-4.8,-79.6C8.1,-73.8,16.1,-51.3,26.9,-37.2Z" transform="translate(100 100)" />
+            <svg
+              class="organic"
+              viewBox="0 0 200 200"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="#0062FF"
+                d="M26.9,-37.2C37.6,-23,51,-17.2,53.5,-8.6C55.9,-0.1,47.4,11.2,41.4,26.1C35.4,41,31.9,59.6,24.5,58.4C17.1,57.2,5.8,36.2,-6.1,27.3C-18.1,18.4,-30.6,21.7,-43.6,16.7C-56.5,11.7,-69.8,-1.4,-71.4,-16.2C-73.1,-30.9,-63.1,-47.1,-49.3,-60.7C-35.5,-74.4,-17.7,-85.3,-4.8,-79.6C8.1,-73.8,16.1,-51.3,26.9,-37.2Z"
+                transform="translate(100 100)"
+              />
             </svg>
-            <svg class="organic2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-              <path fill="#0062FF" d="M35.5,-22.7C41.5,-20.8,38.7,-6.3,35.2,7.8C31.8,21.8,27.7,35.5,19.8,38.1C11.9,40.8,0.2,32.4,-9.5,25.5C-19.2,18.6,-26.8,13.3,-32.1,3.5C-37.3,-6.2,-40.2,-20.2,-34.4,-22C-28.7,-23.8,-14.3,-13.4,0.2,-13.5C14.8,-13.7,29.5,-24.5,35.5,-22.7Z" transform="translate(100 100)" />
+            <svg
+              class="organic2"
+              viewBox="0 0 200 200"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="#0062FF"
+                d="M35.5,-22.7C41.5,-20.8,38.7,-6.3,35.2,7.8C31.8,21.8,27.7,35.5,19.8,38.1C11.9,40.8,0.2,32.4,-9.5,25.5C-19.2,18.6,-26.8,13.3,-32.1,3.5C-37.3,-6.2,-40.2,-20.2,-34.4,-22C-28.7,-23.8,-14.3,-13.4,0.2,-13.5C14.8,-13.7,29.5,-24.5,35.5,-22.7Z"
+                transform="translate(100 100)"
+              />
             </svg>
-
 
             <article class="tilt-image" data-tilt>
               <div class="card-glassmorphism">
                 <ul class="list-unstyled">
-                  <li>MongoDB</li>
-                  <li class="etiqueta">Express</li>
-                  <li>Angular</li>
-                  <li class="etiqueta">NodeJs</li>
-                  <li>JavaScript</li>
-                  <li class="etiqueta"> TypeScript</li>
-                  <li >JQuery</li>
-                  <li class="etiqueta"> Bootstrap</li>
-                  <li >HTML</li>
-                  <li class="etiqueta">CSS</li>
-                  <li>Git</li>
-                  <li class="etiqueta"> Github</li>
-                  <li >Adobe XD</li>
+                  <li class="etiqueta">MongoDB</li>
+                  <li >Express</li>
+                  <li class="etiqueta">Angular</li>
+                  <li >NodeJs</li>
+                  <li class="etiqueta">JavaScript</li>
+                  <li >TypeScript</li>
+                  <li class="etiqueta">JQuery</li>
+                  <li >Bootstrap</li>
+                  <li class="etiqueta">HTML</li>
+                  <li >CSS</li>
+                  <li class="etiqueta">Git</li>
+                  <li >Github</li>
                   <li class="etiqueta">Java</li>
-                  <li >Inglés</li>
+                  <li >Adobe XD</li>
+                  <li class="etiqueta">Inglés Técnico II</li>
                 </ul>
               </div>
             </article>
@@ -443,7 +456,7 @@
 
           <div class="col-7 me-5 mt-5">
             <article class="row mb-5 neumorphism-estudios">
-              <h2 class="col-1 vertical-text gold text-uppercase">Estudios</h2>
+              <h2 class="text-center mb-3 gold text-uppercase letter">Estudios</h2>
               <div class="col">
                 <div class="border-bottom pb-3">
                   <h3>TÉCNICO EN DESARROLLO WEB</h3>
@@ -451,20 +464,49 @@
                     Universidad Nacional de La Matanza - <span>San Justo.</span>
                   </h5>
                   <p>
-                    Programación Orientada a Objetos.<span>
-                      Actualmente en curso - Finaliza 2023.</span
-                    >
+                    La formación se basa en diversos lenguajes tanto de Frontend
+                    como Backend (Java, HTML, CSS, JavaScript, JQuery y
+                    Bootstrap) haciendo principalmente enfoque en la
+                    Programación Web Orientada a Objetos para finalmente
+                    adquerir todos los conocimientos de un Fullstack developer.
+                    <br/>
+                    Además incluye conocimientos en Diseño Gráfico, Hardware,
+                    Redes, Officce avanzado y dos niveles de Inglés
+                    Técnico.
+                    <br/>
+                    <h5 class="text-end">Actualmente en curso - Finaliza Diciembre 2023.</h5>
                   </p>
                 </div>
 
-                <div class="border-bottom pt-3 pb-3 ">
+                <div class="border-bottom pt-3 pb-3">
                   <h3>
                     MASTER EN FRAMEWORKS
                     <br />
                     <span class="text-capitalize"> Angular, react & vue</span>
                   </h3>
-                  <h5>UDEMY - <span>Capacitación online.</span></h5>
-                  <p>Autor Victor Robles.<span> 2021 - 2022.</span></p>
+                  <h5>
+                    UDEMY - Autor: Victor Robles.<span
+                      >Capacitación online.</span
+                    >
+                  </h5>
+                  <p>
+                    Aprovecho para capacitarme complementariamente como
+                    Fullstack haciendo webs SPA y APIs RESTful: 
+                    <br/>
+                    Programación orientada a objetos.
+                    <br/>
+                    Maquetación de sitios web con CSS3 y HTML5.
+                    <br/>
+                    Bases de datos con MongoDB.
+                    <br/>
+                    Backend con JavaScript y NodeJS.
+                    <br/>
+                    App creada con Express.
+                    <br/>
+                    Implementación de TypeScript.
+                    <br/>
+                    <h5 class="text-end"> Finalizado en 2022.</h5>
+                  </p>
                 </div>
 
                 <div class="pt-3">
@@ -475,57 +517,51 @@
                   </h5>
                   <p>
                     Profesor de Biología con trayectoria en Ciencias Naturales
-                    para EGB y Polimodal.<span> Finalizado en 2017.</span>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="row neumorphism-experiencias">
-              <h2 class="col-1 gold vertical-text text-uppercase">Experiencias</h2>
-              <div class="col">
-                <div class="border-bottom pb-3">
-                  <h3>ENCARGADO</h3>
-                  <h5>CALERA CONGRESO SRL. <span>2020-2021</span></h5>
-                  <p>
-                    En mi último empleo, fui encargado de sucursal, presentándome
-                    como líder positivo del personal a cargo, derivando mediante
-                    toma de decisiones y controlando objetivos diarios. Además, me
-                    encargaba de las ventas e incorporación de nuevos clientes,
-                    llevando control de sus cuentas como así también de la caja
-                    diaria, facturación y liquidación de cuentas a los
-                    proveedores, controlando todo el stock que entraba y salía a
-                    diario de la sucursal.
-                    <br />
-                    <span> SUCURSAL BELGRANO - CABA. 4543-5392 DGCEYT</span>
-                  </p>
-                </div>
-
-                <div class="pt-3 pb-3">
-                  <h3>PROFESOR Y PRECEPTOR</h3>
-                  <h5>
-                    DIRECCION GRAL. DE CULTURA Y EDUCACION.
-                    <span>2013 – 2019</span>
-                  </h5>
-                  <p>
-                    A mis 23 años ya me presentaba en las escuelas como
-                    transmisor de conocimientos, desarrollando actividades como
-                    potenciar habilidades y destrezas que el grupo posea como
-                    así también ayudar a superar aquellos aspectos que
-                    dificulten el desarrollo individual. También a la resolución
-                    de problemáticas diversas ante padres en conjunto con el
-                    equipo psicopedagógico y directivos.
-                    <br />
-                    <span>
-                      ESCUELA NRO. 34 - Miño Gabriel, Director
-                      11-6196-9707</span
-                    >
+                    para EGB y Polimodal.<h5 class="text-end"> Finalizado en 2017.</h5>
                   </p>
                 </div>
               </div>
             </article>
           </div>
         </div>
+      </section>
+      <section>
+        <article class=" neumorphism-experiencias ms-5 mr-5">
+          <h2 class="gold text-uppercase text-center">
+            Experiencias
+          </h2>
+          <div>
+            <div class="border-bottom pb-3">
+              <h3>ENCARGADO</h3>
+              <h5>CALERA CONGRESO SRL. <span>2020-2021</span></h5>
+              <p>
+                Líder del personal a cargo, derivando y controlando
+                objetivos diarios. Además, ventas e incorporación de nuevos
+                clientes, control de la caja diaria, facturación y
+                liquidación proveedores, stock diario.
+                <br />
+                <h5 class="text-end"> SUCURSAL BELGRANO - CABA. Tel.: 4543-5392 </h5>
+              </p>
+            </div>
+
+            <div class="pt-3 pb-3">
+              <h3>PROFESOR Y PRECEPTOR</h3>
+              <h5>
+                DIRECCION GRAL. DE CULTURA Y EDUCACION.
+                <span>2013 – 2019</span>
+              </h5>
+              <p>
+                Docente formador, planificador y desarrollo de actividades
+                para potenciar habilidades y destrezas que el grupo posea
+                como así también aspectos individuales. Resolución de
+                problemáticas en conjunto con el equipo psicopedagógico.
+                <br />
+                <h5 class="text-end"> ESCUELA NRO. 34 - Miño Gabriel, Director. Cel.: 011-6196-9707</h5
+                >
+              </p>
+            </div>
+          </div>
+        </article>
       </section>
     </main>
 

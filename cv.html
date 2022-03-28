@@ -138,70 +138,73 @@
         color: #f4f4f4;
         position: relative;
       }
-      #first-box {
-        height: 500px;
-        background-color: #f4f4f4;
+      #image {
+        height: 350px;
+        width: 350px;
+        border-radius: 50%;
+        /* background-color: #f4f4f4; */
+        background-color: #525252;
         background-image: url(https://www.ibm.com/images/portal/A001356T22555K86/essential/megamenu-pictogram-the-essentials.png);
         background-size: 30%;
         background-repeat: repeat;
         background-position-x: 20px;
         background-position-y: -14px;
         position: relative;
+        top: 150px;
+        left: 60px
       }
       .box {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        width: 40%;
         position: absolute;
-        top: 0px;
-        left: 0px;
+        bottom: 30%;
+        left: 40px;
+        max-width: 80%;
       }
-      #german {
+      #nombre {
         font-size: 3.6em;
-        writing-mode: vertical-lr;
-        text-orientation: sideways;
-        letter-spacing: 0.51em;
-        transform: rotate(180deg);
-        margin-top: -6px !important;
-        margin-left: 0px !important;
-        position: absolute;
-        top: -22px;
-        left: 30px;
+        /* writing-mode: vertical-lr; */
+        /* text-orientation: sideways; */
+        letter-spacing: 0.8em;
+        padding: 0px 30px!important;
+        /* transform: rotate(180deg); */
+        /* margin-top: 0px !important; */
+        /* margin-left: 0px !important; */
+        /* position: absolute; */
+        /* top: -22px; */
+        /* left: 30px; */
       }
-      #romano {
-        font-size: 3.52em;
-        writing-mode: vertical-rl;
-        text-orientation: sideways-right;
-        letter-spacing: 0.529em;
-        margin: 0em 0em 0em 2.5em !important;
-        padding-left: 10px !important;
-        padding-bottom: 40px !important;
+      #apellidos {
+        font-size: 3em;
+        /* writing-mode: vertical-rl; */
+        /* text-orientation: sideways-right; */
+        /* letter-spacing: 0.529em; */
+        /* margin: -1px 0em 0em 2.5em !important; */
+        /* padding-left: 10px !important; */
+        /* padding-bottom: 40px !important; */
         background-color: #010101;
         color: #f4f4f4;
+        padding: 0px 30px!important;
       }
-      #alvarez {
-        font-size: 3.35em;
-        writing-mode: vertical-lr;
-        text-orientation: sideways;
-        letter-spacing: 0.5em;
-        margin-right: 40px !important;
+      #presentacion{
+        z-index: 30;
       }
-      .mean-stack {
+
+      .full-stack {
         background-color: transparent;
-        max-height: 91%;
+        /* max-height: 100%; */
         position: absolute;
-        top: 200px;
+        top: 100px;
         right: 3%;
         font-family: "ibm_plex_serifbold";
         font-size: 54px;
         writing-mode: vertical-rl;
         text-orientation: upright;
         z-index: 1;
-        letter-spacing: 35px;
+        letter-spacing: 25px;
       }
       .sobre-mi {
         font-size: 27px;
+        text-align: right;
+        padding-right: 50px;
       }
       h1 {
         color: #010101;
@@ -224,12 +227,16 @@
       }
       h6 {
         font-family: "ibm_plex_sansbold";
-        font-size: 76px;
+        font-size: 30px;
       }
       p {
         font-family: "ibm_plex_seriflight";
         font-weight: bold;
         font-size: 24px;
+      }
+      #web-dev{
+        position: relative;
+        top: -44px;
       }
       .gold {
         color: #c6c6c6;
@@ -247,24 +254,24 @@
         transform: rotate(180deg);
       }
 
-      #position-frontend {
+      #nombre-apellidos {
         position: relative;
         top: 0px;
-        left: -80px;
+        right: 0px;
         font-size: 52px;
-        width: 105%;
+        width: 90%;
       }
-      #position-angular {
-        border: #010101 1px solid;
+      #position-frameworks {
         background-color: #010101;
-        width: 87%;
+        width: 90%;
         position: absolute;
-        bottom: -40px;
+        bottom: -25px;
         left: -15px;
         transform: skewX(-15deg);
-        letter-spacing: 1.6em;
+        font-size: 50px !important;
         font-family: "ibm_plex_serifbold";
-        padding-left: 80px !important;
+        letter-spacing: 0.5em;
+        padding: 10px !important;
       }
       main {
         margin-top: 0px !important;
@@ -358,7 +365,7 @@
     </style>
   </head>
   <body class="container-fluid">
-    <span class="mean-stack text-uppercase">MEAN Stack Developer</span>
+    <span class="full-stack text-uppercase">Angular & React & Vue</span>
     <nav class="p-3">
       <ul class="list-unstyled d-flex justify-content-around">
         <li class="list-inline-item">+54 9 011 2278 8687</li>
@@ -369,28 +376,25 @@
       </ul>
     </nav>
 
-    <header class="d-flex justify-content-left ms-5 mt-5 pt-5">
-      <section id="first-box" class="col-5 border me-3 pt-5 pb-5">
-        <div class="box">
-          <h1 class="text-uppercase" id="german">German</h1>
-          <h1 class="text-uppercase" id="romano">Romano</h1>
-          <h1 class="text-uppercase" id="alvarez">Alvarez</h1>
-        </div>
+    <header class="row justify-content-left ms-5 pt-5">
+      <h3 id="nombre-apellidos" class="font-gradient border-bottom pb-1">
+        Germán Romano Álvarez
+      </h3>
+
+      <section id="image" class="col-5 me-3">
       </section>
 
-      <h6 id="position-angular" class="text-uppercase text-center">Angular</h6>
-
-      <section id="position-soy" class="col-6 text-start pt-5">
-        <h3 id="position-frontend" class="font-gradient border-bottom pb-3">
-          WEB DEVELOPER JR
-        </h3>
-        <p class="sobre-mi border-start me-3 p-3 pe-3 pt-4 pb-5">
-          Soy de San Justo, Buenos Aires, como programador siento que este el mejor lugar para dar el máximo,
-          vertiendo la creatividad que ha generado mi pasatiempo como músico y
-          fusionarlo a su vez con lo disciplinado de la formación académica y
-          las experiencias que traigo conmigo, para de este modo llegar a
-          generar webs auténticas e innovadoras.
-        </p>
+      <section id="presentacion" class="col-8 text-start pt-2">
+        <div>
+          <h5 id="web-dev" class="text-end pe-5">Fullstack Web Developer Jr</h5>
+          <p class="sobre-mi pe-5">
+            Soy de San Justo, Buenos Aires, como programador siento que este el mejor lugar para dar el máximo,
+            vertiendo la creatividad que ha generado mi pasatiempo como músico y
+            fusionarlo a su vez con lo disciplinado de la formación académica y
+            las experiencias que traigo conmigo, para de este modo llegar a
+            generar webs auténticas e innovadoras.
+          </p>
+        </div>
       </section>
     </header>
 
@@ -424,21 +428,23 @@
             <article class="tilt-image" data-tilt>
               <div class="card-glassmorphism">
                 <ul class="list-unstyled">
-                  <li class="etiqueta">MongoDB</li>
+                  <li class="etiqueta">NodeJs</li>
                   <li >Express</li>
-                  <li class="etiqueta">Angular</li>
-                  <li >NodeJs</li>
+                  <li class="etiqueta">MongoDB</li>
+                  <li >Postman</li>
                   <li class="etiqueta">JavaScript</li>
-                  <li >TypeScript</li>
-                  <li class="etiqueta">JQuery</li>
+                  <li >JSX</li>
+                  <li class="etiqueta">TypeScript</li>
                   <li >Bootstrap</li>
-                  <li class="etiqueta">HTML</li>
-                  <li >CSS</li>
-                  <li class="etiqueta">Git</li>
+                  <li class="etiqueta">JQuery</li>
+                  <li >HTML</li>
+                  <li class="etiqueta">CSS</li>
                   <li >Github</li>
-                  <li class="etiqueta">Java</li>
-                  <li >Adobe XD</li>
-                  <li class="etiqueta">Inglés Técnico II</li>
+                  <li class="etiqueta">Git</li>
+                  <li >Java</li>
+                  <li class="etiqueta">Adobe XD</li>
+                  <li >Inglés Técnico II </li>
+
                 </ul>
               </div>
             </article>
@@ -480,18 +486,17 @@
 
                 <div class="border-bottom pt-3 pb-3">
                   <h3>
-                    MASTER EN FRAMEWORKS
+                    MASTER EN FRAMEWORKS PARA JAVASCRIPT
                     <br />
-                    <span class="text-capitalize"> Angular, react & vue</span>
+                    <span class="text-capitalize">Angular & React & Vue</span>
                   </h3>
                   <h5>
-                    UDEMY - Autor: Victor Robles.<span
-                      >Capacitación online.</span
+                    UDEMY - Autor: Victor Robles. <span>Capacitación online.</span
                     >
                   </h5>
                   <p>
                     Aprovecho para capacitarme complementariamente como
-                    Fullstack haciendo webs SPA y APIs RESTful: 
+                    Fullstack haciendo webs SPA: 
                     <br/>
                     Programación orientada a objetos.
                     <br/>
@@ -499,11 +504,15 @@
                     <br/>
                     Bases de datos con MongoDB.
                     <br/>
+                    API RESTful y consultas con Postman.
+                    <br/>
                     Backend con JavaScript y NodeJS.
                     <br/>
                     App creada con Express.
                     <br/>
-                    Implementación de TypeScript.
+                    Implementación de TypeScript en Angular.
+                    <br/>
+                    Implementación de JSX en React.
                     <br/>
                     <h5 class="text-end"> Finalizado en 2022.</h5>
                   </p>

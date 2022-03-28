@@ -2,11 +2,20 @@
 
 El siguiente CV se há realizado en HTML y luego convertido a PDF!
 
-El reto principal fue hacer un "solo archivo HTML" que contenga dentro la etiqueta de style ya que de no ser asi el CSS queda sin efectos por cuestiones del conversor.
+TIP 1:
+Por requerimientos del conversor hacer un "solo archivo HTML" que contenga dentro la etiqueta de style ya que de no ser así el CSS quedará sin efectos.
 
-Si quieres transformar un HTML en PDF puedes ir al siguiente enlace:
+TIP 2:
+Las imágenes tampoco serán tomadas de su manera convencional para esto te aconsejo transformarlas a base64
 
-# Link Conversor
+
+# link Conversor de imagen a base64
+
+`https://www.base64-image.de/`
+
+
+
+# Link Conversor a PDF
 
 `https://www.sejda.com/html-to-pdf`
 
